@@ -350,9 +350,9 @@ namespace WhatIsOperator
             Console.WriteLine("기말고사 : ");
             int.TryParse(Console.ReadLine(), out Finals);
 
-
+            Console.Write("==================");
             Console.WriteLine($"성적 총 합: {record1 + record2 + record3 + midtermExam + Finals} ");
-            
+            Console.Write("==================");
 
 
 
