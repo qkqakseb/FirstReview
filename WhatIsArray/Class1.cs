@@ -378,46 +378,46 @@ namespace WhatIsArray
             int eatPeopleNumber = 0;                  // 먹은 사람 번호를 지정해 주기 위해 선언하였다.
 
 
-            apple[0] = 0;                            // 먹은 사과 갯수  0번째의 번호를 매겼다.
-            apple[1] = 0;
-            apple[2] = 0;
-            apple[3] = 0;
-            apple[4] = 0;
+            apple[0] = 0;                            // 먹은 사과 갯수  0번째의 번호를 매겼다. (0이라는 배열을 선언)
+            apple[1] = 0;                            // 먹은 사과 갯수  1번째의 번호를 매겼다. (1이라는 배열을 선언)
+            apple[2] = 0;                           // 먹은 사과 갯수  2번째의 번호를 매겼다.  (2이라는 배열을 선언)
+            apple[3] = 0;                           // 먹은 사과 갯수  3번째의 번호를 매겼다.  (3이라는 배열을 선언)
+            apple[4] = 0;                           // 먹은 사과 갯수  4번째의 번호를 매겼다.  (4이라는 배열을 선언)
 
 
-            Console.WriteLine("사람1 이(가) 아침에 먹은 사과 개수 : ");
-            int.TryParse(Console.ReadLine(), out apple[0]);
+            Console.WriteLine("사람1 이(가) 아침에 먹은 사과 개수 : ");     // 사람1이 먹은 사과 개수를 유저가 입력한 값을 출력하게 한다.
+            int.TryParse(Console.ReadLine(), out apple[0]);                 // 유저가 입력한 값이 정수로 변환했는지 확인다.
 
-            Console.WriteLine("사람2 이(가) 아침에 먹은 사과 개수 : ");
-            int.TryParse(Console.ReadLine(), out apple[1]);
-            
-            Console.WriteLine("사람3 이(가) 아침에 먹은 사과 개수 : ");
-            int.TryParse(Console.ReadLine(), out apple[2]);
+            Console.WriteLine("사람2 이(가) 아침에 먹은 사과 개수 : ");     // 사람2이 먹은 사과 개수를 유저가 입력한 값을 출력하게 한다.
+            int.TryParse(Console.ReadLine(), out apple[1]);                 // 유저가 입력한 값이 정수로 변환했는지 확인다.
 
-            Console.WriteLine("사람4 이(가) 아침에 먹은 사과 개수 : ");
-            int.TryParse(Console.ReadLine(), out apple[3]);
+            Console.WriteLine("사람3 이(가) 아침에 먹은 사과 개수 : ");    // 사람3이 먹은 사과 개수를 유저가 입력한 값을 출력하게 한다.
+            int.TryParse(Console.ReadLine(), out apple[2]);                // 유저가 입력한 값이 정수로 변환했는지 확인다.
 
-            Console.WriteLine("사람5 이(가) 아침에 먹은 사과 개수 : ");
-            int.TryParse(Console.ReadLine(), out apple[4]);
+            Console.WriteLine("사람4 이(가) 아침에 먹은 사과 개수 : ");    // 사람4이 먹은 사과 개수를 유저가 입력한 값을 출력하게 한다.
+            int.TryParse(Console.ReadLine(), out apple[3]);                // 유저가 입력한 값이 정수로 변환했는지 확인다.
+
+            Console.WriteLine("사람5 이(가) 아침에 먹은 사과 개수 : ");   // 사람5이 먹은 사과 개수를 유저가 입력한 값을 출력하게 한다.
+            int.TryParse(Console.ReadLine(), out apple[4]);               // 유저가 입력한 값이 정수로 변환했는지 확인다.
 
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)                                   // int i가 0부터 5까지 1씩 증가하면
             {
-                if ( max < apple[i])
+                if ( max < apple[i])                                      // apple[i] 값이 max보다 큰면
                 {
-                    max = apple[i];
+                    max = apple[i];                                       // max에 값을 넣는다.
                     
-                }
+                }                                                        // 유저가 입력한 값 중 가장 큰 값을 찾기 위한 반복문이다.
 
-                if ( max == apple[i])
+                if ( max == apple[i])                                    // 만약 apple[i]의 값이 max와 같다면
                 {
-                    eatPeopleNumber = i + 1;
-                }
+                    eatPeopleNumber = i + 1;                             // i가 1씩 더한 값을 eatPeopleNumber에 대입한다. 
+                }                                                        // 제일 많이 먹은 사람을 번호로 나타내어 출력하기 위함이다.
 
 
                 
             }
-            Console.WriteLine($"제일 많이 먹은 사람은  사람{eatPeopleNumber} 이다.");
+            Console.WriteLine($"제일 많이 먹은 사람은  사람{eatPeopleNumber} 이다.");    // 유저가 입력한 값 중 가장 큰 값을 찾아 제일 많이 먹은 사람의 번호를 출력하는 출력문을 썼다.
 
 
         }//Main
