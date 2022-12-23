@@ -323,49 +323,103 @@ namespace WhatIsArray
              *   
              */
 
-            int[] array;                                      // int[]의 이름을 array라고 선언하였다.
-            array = new int[100];                             // 크기가 100인 배열을 선언하였다.
+            //int[] array;                                      // int[]의 이름을 array라고 선언하였다.
+            //array = new int[100];                             // 크기가 100인 배열을 선언하였다.
 
-            Random random = new Random();                    // 랜덤을 쓰기 위해 선언해준다.
-            array[0] = random.Next(1, 101);                  // 1~100사이 숫자를 랜덤으로 나타내서 배열에 대입해 준다.
+            //Random random = new Random();                    // 랜덤을 쓰기 위해 선언해준다.
+            //array[0] = random.Next(1, 101);                  // 1~100사이 숫자를 랜덤으로 나타내서 배열에 대입해 준다.
 
-            int max = 0;                                    // 최댓값을 선언해준다.
+            //int max = 0;                                    // 최댓값을 선언해준다.
 
-            for (int index = 0; index < 100; index++)       // []안에 0부터 100번까지 1씩 증가하면서 반복한다.
-            {
-                array[index] = random.Next(1, 101);         // 랜덤으로 나온 숫자를 array[index]에 대입한다.
-
-                if (max < array[index])                    // 만약 max가 랜덤으로 나온 숫자보다 작으면
-                {
-                    max = array[index];                    //  랜덤으로 나온 숫자를 max에 대입한다.
-                }
-            }       // loop: 랜덤 값 넣고 max 찾는 루프
-
-            //for (int i = 0; i < 10; i++)                   
+            //for (int index = 0; index < 100; index++)       // []안에 0부터 100번까지 1씩 증가하면서 반복한다.
             //{
-            //    Console.WriteLine($"{array[i]}");
+            //    array[index] = random.Next(1, 101);         // 랜덤으로 나온 숫자를 array[index]에 대입한다.
+
+            //    if (max < array[index])                    // 만약 max가 랜덤으로 나온 숫자보다 작으면
+            //    {
+            //        max = array[index];                    //  랜덤으로 나온 숫자를 max에 대입한다.
+            //    }
+            //}       // loop: 랜덤 값 넣고 max 찾는 루프
+
+            ////for (int i = 0; i < 10; i++)                   
+            ////{
+            ////    Console.WriteLine($"{array[i]}");
+            ////}
+            //Console.WriteLine($"최댓값 : {max}");          // 최댓값 max를 출력한다.
+
+
+
+
+
+
+            ///* LAB 2 사과를 제일 좋아하는 사람찾기
+            // * 사람들 5명(사람1, 사람2,....사과5)에게 아침에 먹는 사과 개수를 입력하도록 요청하는 프로그램 작성
+            // * 데이터 입력이 마무리 되면 누가 가장 많은 사과를 아침으로 먹었는지 출력한다.(기본형)
+            // *   - 이상한 입력 예외처리
+            // *   - 제일 적게 먹은 사람도 찾도록 수정해보기 (변형 1)
+            // *   - 먹은 사과의 개수 순으로 정렬. 정렬 알고리즘은 본인 사용한 것으로 하되
+            // *         - 알고리즘을 잘 모르겠다면 버블 정렬을 도전 해볼 것.(변형 2)   
+            // *         - 알고리즘을 잘 알겠다면 Merge sort 도전 해볼 것 (어려운 버전)
+            // *              - 정렬 도전 시 유저 입력 x
+            // *              - 데어터는 난수로 100 ~1000개 정도의 값
+            // *              - 중복 제거
+            // *              - 시간초는 전혀 상관 없음
+            // */
+
+            //// (기본형)
+
+            //int[] apple;                               // int[]의 이름을 apple 이라고 선언해준다.
+            //apple = new int[5];                        // apple에 크기가 5인 배열을 대입한다.
+
+            //int max = 0;                              // max를 최대값으로 지정해주고 선언하였다.
+            //int eatPeopleNumber = 0;                  // 먹은 사람 번호를 지정해 주기 위해 선언하였다.
+
+            //apple[0] = 0;                            // 먹은 사과 갯수  0번째의 번호를 매겼다.
+            //apple[1] = 0;
+            //apple[2] = 0;
+            //apple[3] = 0;
+            //apple[4] = 0;
+
+            //Console.WriteLine("사람1 이(가) 아침에 먹은 사과 개수 : ");
+            //int.TryParse(Console.ReadLine(), out apple[0]);
+
+            //Console.WriteLine("사람2 이(가) 아침에 먹은 사과 개수 : ");
+            //int.TryParse(Console.ReadLine(), out apple[1]);
+            
+            //Console.WriteLine("사람3 이(가) 아침에 먹은 사과 개수 : ");
+            //int.TryParse(Console.ReadLine(), out apple[2]);
+
+            //Console.WriteLine("사람4 이(가) 아침에 먹은 사과 개수 : ");
+            //int.TryParse(Console.ReadLine(), out apple[3]);
+
+            //Console.WriteLine("사람5 이(가) 아침에 먹은 사과 개수 : ");
+            //int.TryParse(Console.ReadLine(), out apple[4]);
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    if ( max < apple[i])
+            //    {
+            //        max = apple[i];
+                    
+            //    }
+
+            //    if ( max == apple[i])
+            //    {
+            //        eatPeopleNumber = i + 1;
+            //    }
+
             //}
-            Console.WriteLine($"최댓값 : {max}");          // 최댓값 max를 출력한다.
+            //Console.WriteLine($"제일 많이 먹은 사람은  사람{eatPeopleNumber} 이다.");
 
-
-
-
-
-
-
-
-            /* LAB 2 사과를 제일 좋아하는 사람찾기
-             * 사람들 5명(사람1, 사람2,....사과5)에게 아침에 먹는 사과 개수를 입력하도록 요청하는 프로그램 작성
-             * 데이터 입력이 마무리 되면 누가 가장 많은 사과를 아침으로 먹었는지 출력한다.(기본형)
-             *   - 이상한 입력 예외처리
-             *   - 제일 적게 먹은 사람도 찾도록 수정해보기 (변형 1)
-             *   - 먹은 사과의 개수 순으로 정렬. 정렬 알고리즘은 본인 사용한 것으로 하되
-             *         - 알고리즘을 잘 모르겠다면 버블 정렬을 도전 해볼 것.(변형 2)   
-             *         - 알고리즘을 잘 알겠다면 Merge sort 도전 해볼 것 (어려운 버전)
-             *              - 정렬 도전 시 유저 입력 x
-             *              - 데어터는 난수로 100 ~1000개 정도의 값
-             *              - 중복 제거
-             *              - 시간초는 전혀 상관 없음
+            /* 문제 1
+             * 사용자로부터 2개의 문자열을 읽어서 같은지 다른지 화면에 출력하는 프로그램 작성
+             *   ex)
+             *        첫 번째 문자열 : Hello
+             *        두 번째 문자열 : World
+             *        2개의 문자열은 다릅니다.
+             *       - Equals 메서드를 사용하지 않을 것.
+             *       
+             *       힌트) Length를 비교 한다던지?
              */
 
             // (기본형)
@@ -413,13 +467,32 @@ namespace WhatIsArray
                 {
                     eatPeopleNumber = i + 1;                             // i가 1씩 더한 값을 eatPeopleNumber에 대입한다. 
                 }                                                        // 제일 많이 먹은 사람을 번호로 나타내어 출력하기 위함이다.
-
-
                 
             }
             Console.WriteLine($"제일 많이 먹은 사람은  사람{eatPeopleNumber} 이다.");    // 유저가 입력한 값 중 가장 큰 값을 찾아 제일 많이 먹은 사람의 번호를 출력하는 출력문을 썼다.
 
 
+            /* 문자 2
+             * 5개의 음료(콜라, 물, 스프라이트, 주스, 커피)를 판매하는 자판기 머신을 구현해보기
+             * 사용자가 1부터 5사이의 숫자를 입력함
+             * 선택한 음료를 출력함
+             * 1~5이외의 숫자를 선택하면 오류 메시지 출력함
+             * ex)
+             *    콜라, 물, 스프라이트, 주스, 커피(1~5) 중에서 하나를 선택하세요: 1
+             *    콜라를 선택하였습니다.
+             *    - 프로 그램 종료 -
+             *    힌트) switch문이나 if/else 문을 사용한다.
+             *    
+             */
+
+            /* 배열 days[]를 아래와 같이 초기화하고 배열 요소의 값을 다음과 같이 출력하는 프로그램 작성
+             * - 배열 days[]는 -> 31, 29, 31, 30, 31, 30, 31, 31, 
+             *    ex)
+             *         1월은 31일까지입니다.
+             *         2월은 29일까지 입니다.
+             *         힌트) 배열의 초기화는 중괄호를 사용한다.
+                */
+             
         }//Main
     } // Class
 }
