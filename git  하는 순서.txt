@@ -1,0 +1,7 @@
+git 저장하기
+1. git fetch -p   -> 변경사항이 있는지 확인한다.
+2. git pull origin main -> 나의 main과 git hub가 다를 경우 쓴다.
+3. git add . 
+4. git status    -> add . 가 됬는지 확인하기 위해 씀
+5. git commit -m ""
+6. git push origin main
