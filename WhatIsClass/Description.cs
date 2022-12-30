@@ -308,8 +308,22 @@ namespace WhatIsClass
 
     // 슬라임 몬스터 클래스
     class Slime : Monster
-
     {
+        //public string Name
+        //{
+        //    get { return this.name; }
+        //    set { this.name = value; }
+        //}
+        public string GetName()
+        {
+            return this.name;
+        }
+        public void SetName(string value_)
+        {
+            this.name = value_;
+        }
+
+        
         public Slime()
         {
             this.name = "슬라임";
@@ -373,6 +387,15 @@ namespace WhatIsClass
         {
             Console.WriteLine("{0}가 데이지를 {1} 받았다", name, damage);
         }
+        public int GetHp()
+        {
+            return this.hp;
+        }
+        public void SetHp(int myhp)
+        {
+            this.hp = myhp;
+            this.nowhp = myhp;
+        }
     }
 
     // 데이비드 유저 클래스
@@ -405,6 +428,7 @@ namespace WhatIsClass
             
 
             Slime slime = new Slime();
+            slime.SetName("보라 슬라임");
             Wolf wolf = new Wolf();
             Zombie zombie = new Zombie();
 
@@ -484,23 +508,3 @@ namespace WhatIsClass
     }// class UserMonsterAttack
 }
 
-/*int[] number = new int[3];
-                int index = 0;
-                while(index < 3)
-                {
-                    int ran = random.Next(1, 3 + 1);
-                    if (index == 0)
-                    {
-                        number[index] = ran;
-                        index++;
-                    }
-                    else
-                    {
-                        if (number.Contains(ran)) continue;
-                        else
-                        {
-                            number[index] = ran;
-                            index++;
-                        }
-                    }
-                }*/

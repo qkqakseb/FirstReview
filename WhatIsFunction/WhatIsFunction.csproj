@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <Compile Remove="MinGames.cs" />
-    <Compile Remove="Problem.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="Program2.cs" />
+    <Compile Remove="SlideGame.cs" />
     <Compile Remove="TicTacToe.cs" />
   </ItemGroup>
 

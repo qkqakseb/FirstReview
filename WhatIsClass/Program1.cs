@@ -16,11 +16,22 @@ namespace WhatIsClass
         {
 
             UserMonsterAttack userMonsterAttack = new UserMonsterAttack();
+            Slime slime = new Slime();
+            slime.GetName();
+            slime.SetName("보라 슬라임");
+            //유저 HP 바꾸기
+            User user = new User();
+            user.GetHp();
+            user.SetHp(20);
+
+            //slime.Name = "보라 슬라임";
+
             // 몬스터 랜덤 등장
             userMonsterAttack.MonstersRandom();
 
             // 유저 등장
             David david= new David();
+            david.SetHp(20);
             userMonsterAttack.UserCreate(david);
 
             // 유저 공격
