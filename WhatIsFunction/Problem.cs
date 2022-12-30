@@ -255,19 +255,21 @@ namespace WhatIsFunction
                         nowY++;
                         break;
                 }
-                
-                Console.Clear();                                                    // 화면 정리
-                for (int y = 0; y < 10; y++)                                        
-                {
-                    for (int x = 0; x < 10; x++)
-                    {
-                        Console.Write($"{array[y, x]}");
-                    }
-                    Console.WriteLine();
-                }                                                                  // 이동한 값들을 출력해준다.
-                Console.WriteLine($"먹은 코인($) 개수 : {eatCoin}");               // break가 걸려서 먹은 코인($)의 개수가 안출력되기 때문에 한번 더 출력해준다.
+
+                PrintMyMove(array, eatCoin);
+                //Console.Clear();                                                    // 화면 정리
+                //for (int y = 0; y < 10; y++)                                        
+                //{
+                //    for (int x = 0; x < 10; x++)
+                //    {
+                //        Console.Write($"{array[y, x]}");
+                //    }
+                //    Console.WriteLine();
+                //}                                                                  // 이동한 값들을 출력해준다.
+                //Console.WriteLine($"먹은 코인($) 개수 : {eatCoin}");               // break가 걸려서 먹은 코인($)의 개수가 안출력되기 때문에 한번 더 출력해준다.
             }// loop : while 게임 루프
             //end
+            
             
 
 
@@ -275,7 +277,20 @@ namespace WhatIsFunction
 
 
 
+        }
 
+        public static void PrintMyMove(string[,] array, int eatCoin) 
+        {
+            Console.Clear();
+            for (int y = 0; y < 10; y++)
+            {
+                for (int x = 0; x < 10; x++)
+                {
+                    Console.Write($"{array[y, x]}");
+                }
+                Console.WriteLine();
+            }                                                                  // 이동한 값들을 출력해준다.
+            Console.WriteLine($"먹은 코인($) 개수 : {eatCoin}");
         }
     }
 }
