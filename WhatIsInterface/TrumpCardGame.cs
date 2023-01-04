@@ -196,13 +196,16 @@ namespace WhatIsInterface
                 {
                     Console.WriteLine(shape[playerCard[i] / 13] + (playerCard[i] % 13 + 1) + ", ");
                 }
-            }
+            } TopCheck(playerCard, computerCard);
         }
-        public bool TopCheck(List<int> computerCard, List<int> playerCard)
+         bool TopCheck(List<int> computerCard, List<int> playerCard)
         {
             bool topcheck = true;
             int max1 = 0;
             int max2 = 0;
+
+            int shape1 = 0;
+            int shape2 = 0;
 
             for(int i = 0; i < playerCard.Count; i++)
             {
@@ -214,8 +217,10 @@ namespace WhatIsInterface
                 {
                     max1 = 13;
                 }
+             
                 
             }
+            Console.WriteLine(max1);
             return topcheck;
         }
     }
