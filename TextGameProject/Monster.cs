@@ -8,26 +8,20 @@ namespace TextGameProject
 {
     public class Monster
     {
-        protected string name;
-        protected string image;
-        protected int hp;
-        protected int damage;
+        public string name;
+        public string image;
+        public int hp;
+        public int damage;
         protected int money = 100;
         protected string item;
         protected int mstattack;
+        protected int inputMonster;
+        public int increaseHp;
 
 
         public void Mster()
         {
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine(" 싸울 몬스터를 선택해주세요~!");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
+
             Console.WriteLine("1. 슬라임 (와)과 싸우기");
             Console.WriteLine();
             Console.WriteLine();
@@ -38,6 +32,33 @@ namespace TextGameProject
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("4. 늑대 (와)과 싸우기");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        #region 몬스터의 정보를 가져오는 함수
+        public string GetName()
+        {
+            return this.name;
+        }
+        public string GetImage()
+        {
+            return this.image;
+        }
+        public int GetHp()
+        {
+            return this.hp;
+        }
+        public int GetDamage()
+        {
+            return this.damage;
+        }
+        #endregion      // 몬스터의 정보를 가져오는 함수
+
+        public void MonHit(int damage)
+        {
+
+            hp = hp - damage;
         }
     }
 

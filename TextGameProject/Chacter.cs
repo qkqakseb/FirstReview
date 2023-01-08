@@ -6,28 +6,22 @@ using System.Threading.Tasks;
 
 namespace TextGameProject
 {
-    public class Chacter
+    public class Characters
     {
-        protected string name;
-        protected string image;
-        protected int hp;
-        protected int damage;
-        protected int money = 100;
-        protected string item;
-        protected int chattack;
-        protected int inputNumber;
+        public string name;
+        public string image;
+        public int hp;
+        public int damage;
+        public int money = 100;
+        public string item;
+        public int chattack;
+        public int increaseHp;
+        public int decreaseHp;
+        //protected int inputNumber;
 
-        public void User()
+        public void Chter ()
         {
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine(" 당신의 캐릭터를 선택해주세요~! (1. 배찌   2. 다오  3. 디지니  4. 에띠)");
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine();
-            
+
             Console.WriteLine($"1. 배찌 : 게으르고 잠이 많은 장난꾸러기 항상 사고를 치고 다닌다.");
             Console.WriteLine();
             Console.WriteLine();
@@ -58,9 +52,16 @@ namespace TextGameProject
             return this.damage;
         }
         #endregion      // 캐릭터의 정보를 가져오는 함수
+
+        // 캐릭터가 공격
+        public void ChHit(int damage)
+        {
+            
+            hp = hp - damage;
+        }
     }
 
-    public class Bazzi : Chacter
+    public class Bazzi : Characters
     {
         public Bazzi() 
         {
@@ -70,15 +71,11 @@ namespace TextGameProject
             this.damage = 3;
             this.item = "";
             this.chattack = 0;
-
-            //Console.WriteLine($"1.              {this.chName}");
-            //Console.WriteLine($"                {this.chImage}");
-            //Console.WriteLine("게으르고 잠이 많은 장난꾸러기 항상 사고를 치고 다닌다.");
         }
         
     }
 
-    public class Dao : Chacter 
+    public class Dao : Characters
     {
         public Dao() 
         {
@@ -88,14 +85,10 @@ namespace TextGameProject
             this.damage = 4;
             this.item = "";
             this.chattack = 0;
-
-            //Console.WriteLine($"2.         {this.chName}");
-            //Console.WriteLine($"           {this.chImage}");
-            //Console.WriteLine("정의롭고 착한 의리남 불의를 보면 못참는다.");
         }
     }
 
-    public class Dizni: Chacter
+    public class Dizni: Characters
     {
         public Dizni()
         {
@@ -105,14 +98,10 @@ namespace TextGameProject
             this.damage = 1;
             this.item = "";
             this.chattack = 0;
-
-            //Console.WriteLine($"3.                  {this.chName}");
-            //Console.WriteLine($"                    {this.chImage}");
-            //Console.WriteLine("말이 없고 부끄럼이 많은 수줍음쟁이 혼자 놀기를 좋아한다.");
         }
     }
 
-    public class Ethi : Chacter
+    public class Ethi : Characters
     {
         public Ethi()
         {
@@ -122,10 +111,6 @@ namespace TextGameProject
             this.damage = 2;
             this.item = "";
             this.chattack = 0;
-
-            //Console.WriteLine($"4.                 {this.chName}");
-            //Console.WriteLine($"                   {this.chImage}");
-            //Console.WriteLine("늘 책을 끼고 사는 공부벌레 아는건 많지만 헛똑똑이다.");
         }
     }
 

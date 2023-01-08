@@ -8,6 +8,19 @@ namespace TextGameProject
 {
     internal class Store
     {
+        // 방어 아이템
+        string recoveryMedicine = "회복약";
+        string needle = "바늘";
+        string shield = "방패";
+
+        // 공격 아이템
+        string waterBalloon = "물풍선";
+        string waterBomb = "물폭탄";
+        string waterRays = "물광선";
+
+        // 아이템 선택
+        int selectItem = 0;
+
         public void Stor()
         {
             Console.WriteLine();
@@ -27,6 +40,8 @@ namespace TextGameProject
             Console.WriteLine("상점 ====================================================================================================================");
             Console.WriteLine();
             Console.WriteLine();
+            Console.WriteLine(" 아이템을 선택해주세요.");
+            int.TryParse(Console.ReadLine(), out selectItem);
             Console.Write("          1. 회복 약 ");
             Console.WriteLine("                4. 물 풍선");
             Console.WriteLine();
