@@ -14,9 +14,9 @@ namespace TextGameProject
         public int damage;
         protected int money = 100;
         protected string item;
-        protected int mstattack;
         protected int inputMonster;
         public int increaseHp;
+        public int monGetMoney;
 
 
         public void Mster()
@@ -71,7 +71,8 @@ namespace TextGameProject
             this.hp = 20;
             this.damage = 1;
             this.item = "";
-            this.mstattack = 0;
+            this.monGetMoney = 1;
+            this.increaseHp = 20;
         }
     }
     public class Oak : Monster 
@@ -83,7 +84,8 @@ namespace TextGameProject
             this.hp = 20;
             this.damage = 2;
             this.item = "";
-            this.mstattack = 0;
+            this.monGetMoney = 2;
+            this.increaseHp = 20;
         }
     }
     public class Zombie : Monster
@@ -95,7 +97,8 @@ namespace TextGameProject
             this.hp = 30;
             this.damage = 3;
             this.item = "";
-            this.mstattack = 0;
+            this.monGetMoney = 3;
+            this.increaseHp = 30;
         }
     }
     public class Wolf : Monster 
@@ -108,7 +111,8 @@ namespace TextGameProject
             this.hp = 35;
             this.damage = 4;
             this.item = "";
-            this.mstattack = 0;
+            this.monGetMoney = 4;
+            this.increaseHp = 35;
         }
     }
 }

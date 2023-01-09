@@ -14,10 +14,9 @@ namespace TextGameProject
         public int damage;
         public int money = 100;
         public string item;
-        public int chattack;
         public int increaseHp;
-        public int decreaseHp;
-        //protected int inputNumber;
+        public List<int> inventory;
+   
 
         public void Chter ()
         {
@@ -70,7 +69,9 @@ namespace TextGameProject
             this.hp = 30;
             this.damage = 3;
             this.item = "";
-            this.chattack = 0;
+            this.increaseHp = 30;
+            this.inventory = new List<int>();
+  
         }
         
     }
@@ -84,7 +85,8 @@ namespace TextGameProject
             this.hp = 35;
             this.damage = 4;
             this.item = "";
-            this.chattack = 0;
+            this.increaseHp = 35;
+            this.inventory = new List<int>();
         }
     }
 
@@ -95,9 +97,10 @@ namespace TextGameProject
             this.image = "（.＞ｗ＜.）";
             this.name = " 디지니";
             this.hp = 25;
-            this.damage = 1;
+            this.damage = 3;
             this.item = "";
-            this.chattack = 0;
+            this.increaseHp = 25;
+            this.inventory = new List<int>();
         }
     }
 
@@ -110,7 +113,8 @@ namespace TextGameProject
             this.hp = 20;
             this.damage = 2;
             this.item = "";
-            this.chattack = 0;
+            this.increaseHp = 20;
+            this.inventory = new List<int>();
         }
     }
 

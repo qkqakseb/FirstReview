@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
@@ -21,23 +23,12 @@ namespace TextGameProject
         // 출력한 캐릭터
         string outCharacters;
 
-        // 캐릭터
-        Bazzi bazzi = new Bazzi();
-        Dao dao = new Dao();
-        Dizni dizni = new Dizni();
-        Ethi ethi = new Ethi();
-
         // 입력한 몬스터
         int inputMonster;
 
         // 출력한 몬스터
         string outMonster;
 
-        // 몬스터
-        Slime slime = new Slime();
-        Oak oak = new Oak();
-        Zombie zombie = new Zombie();
-        Wolf wolf = new Wolf();
 
         // 이겼을때 이동 경로 선택
         int winChMove = 0;
@@ -45,6 +36,8 @@ namespace TextGameProject
         // 졌을때 이동 경로 선택
         int loseMove = 0;
 
+        // 몬스터 세기(몬스터 1,2~)
+        int count = 1;
 
 
         // 출력하는 순서
@@ -72,6 +65,7 @@ namespace TextGameProject
             switch (inputChacter)
             {
                 case 1:
+                    Bazzi bazzi = new Bazzi();
                     Console.WriteLine("배찌 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{bazzi.GetImage()}");
@@ -79,12 +73,11 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {bazzi.GetName()}");
                     Console.WriteLine($" hp : {bazzi.GetHp()}");
                     Console.WriteLine($" 데미지 : {bazzi.GetDamage()}");
-                    outCharacters = "배찌";
-                    bazzi.increaseHp = 30;
-                    bazzi.decreaseHp = 30;
                     characters = bazzi;
+
                     break;
                 case 2:
+                    Dao dao = new Dao();
                     Console.WriteLine("다오 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{dao.GetImage()}");
@@ -92,11 +85,10 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {dao.GetName()}");
                     Console.WriteLine($" hp : {dao.GetHp()}");
                     Console.WriteLine($" 데미지 : {dao.GetDamage()}");
-                    outCharacters = "다오";
-                    dao.increaseHp = 35;
                     characters = dao;
                     break;
                 case 3:
+                    Dizni dizni= new Dizni();
                     Console.WriteLine("디지니 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{dizni.GetImage()}");
@@ -104,11 +96,10 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {dizni.GetName()}");
                     Console.WriteLine($" hp : {dizni.GetHp()}");
                     Console.WriteLine($" 데미지 : {dizni.GetDamage()}");
-                    outCharacters = "디지니";
-                    bazzi.increaseHp = 25;
-                    characters = dao;
+                    characters = dizni;
                     break;
                 case 4:
+                    Ethi ethi = new Ethi();
                     Console.WriteLine("에띠 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{ethi.GetImage()}");
@@ -116,9 +107,7 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {ethi.GetName()}");
                     Console.WriteLine($" hp : {ethi.GetHp()}");
                     Console.WriteLine($" 데미지 : {ethi.GetDamage()}");
-                    outCharacters = "에띠";
-                    bazzi.increaseHp = 20;
-                    characters = dao;
+                    characters = ethi;
                     break;
             }
             Console.ReadKey();
@@ -137,6 +126,8 @@ namespace TextGameProject
             switch (inputMonster)
             {
                 case 1:
+                    Slime slime = new Slime();
+
                     Console.WriteLine("슬라임 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{slime.GetImage()}");
@@ -144,12 +135,11 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {slime.GetName()}");
                     Console.WriteLine($" hp : {slime.GetHp()}");
                     Console.WriteLine($" 데미지 : {slime.GetDamage()}");
-                    outMonster = "슬라임";
-                    slime.increaseHp = 20;
                     monster = slime;
-
                     break;
                 case 2:
+                    Oak oak = new Oak();  
+                    
                     Console.WriteLine("오크 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{oak.GetImage()}");
@@ -157,12 +147,11 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {oak.GetName()}");
                     Console.WriteLine($" hp : {oak.GetHp()}");
                     Console.WriteLine($" 데미지 : {oak.GetDamage()}");
-                    outMonster = "오크";
-                    oak.increaseHp = 20;
                     monster = oak;
-
                     break;
                 case 3:
+                    Zombie zombie  = new Zombie();
+
                     Console.WriteLine("좀비 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{zombie.GetImage()}");
@@ -170,12 +159,11 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {zombie.GetName()}");
                     Console.WriteLine($" hp : {zombie.GetHp()}");
                     Console.WriteLine($" 데미지 : {zombie.GetDamage()}");
-                    outMonster = "좀비";
-                    zombie.increaseHp = 30;
                     monster = zombie;
-
                     break;
                 case 4:
+                    Wolf wolf = new Wolf();
+
                     Console.WriteLine("늑대 을(를) 선택하셨습니다.");
                     Console.WriteLine();
                     Console.WriteLine($"{wolf.GetImage()}");
@@ -183,33 +171,65 @@ namespace TextGameProject
                     Console.WriteLine($" 이름 : {wolf.GetName()}");
                     Console.WriteLine($" hp : {wolf.GetHp()}");
                     Console.WriteLine($" 데미지 : {wolf.GetDamage()}");
-                    outMonster = "늑대";
-                    wolf.increaseHp = 35;
                     monster = wolf;
+
                     break;
             }
-
-            Console.Clear();
-            Console.WriteLine($"{outCharacters} 와(과) {outMonster} 이(가) 배틀을 시작합니다~!!");
-
-
-
+            Console.ReadKey();
             Console.Clear();
 
-            // 셋업
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"{outCharacters} VS {outMonster}");
+
+
+            // 캐릭터 vs 몬스터 가지고 오기[셋업(설정)]
             batting.Setup(characters, monster);
-
-            //Bat()[함수]에 있는 정보 출력
-            batting.Bat(characters, monster);
 
             while (true)
             {
+                // 공격 당했을때 몬스터 데이지 감소, 캐릭터가 먼저 공격
+                monster.MonHit(characters.damage);
+
                 // 공격 당했을때 캐릭터 데이지 감소
                 characters.ChHit(monster.damage);
 
-                // 공격 당했을때 몬스터 데이지 감소
-                monster.MonHit(characters.damage);
+                //Bat()[함수]에 있는 정보 출력
+                batting.Bat(characters, monster);
+
+                Console.WriteLine($"남은 몬스터 체력 : {monster.hp} ");
+                Console.WriteLine($"남은 캐릭터 체력 : {characters.hp} ");
+                Console.ReadKey();
+                if (monster.hp <= 0)
+                {
+                    Console.Clear();
+                    count++;
+                    if (count >= 5)
+                    {
+                        batting.Endding(characters, monster);
+                    }
+                    else 
+                    {
+                        batting.Win(characters, monster);
+                    }       
+                }
+                else if(characters.hp <= 0)
+                {
+                    Console.Clear();
+                    batting.Lose(characters);
+                    
+                }
+
+                Console.ReadKey();
+                Console.Clear();
+
+
             }
+            
+           
+
+
 
         }
 
