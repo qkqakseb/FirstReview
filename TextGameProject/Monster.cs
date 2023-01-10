@@ -13,7 +13,7 @@ namespace TextGameProject
         public int hp;
         public int damage;
         protected int money = 100;
-        protected string item;
+        protected int[] item;
         protected int inputMonster;
         public int increaseHp;
         public int monGetMoney;
@@ -70,7 +70,7 @@ namespace TextGameProject
             this.name = "슬라임";
             this.hp = 20;
             this.damage = 1;
-            this.item = "";
+            this.item = new int[6] {0,1,2,3,4,5};
             this.monGetMoney = 1;
             this.increaseHp = 20;
         }
@@ -83,7 +83,7 @@ namespace TextGameProject
             this.name = "오크";
             this.hp = 20;
             this.damage = 2;
-            this.item = "";
+            this.item = new int[6] { 0, 1, 2, 3, 4, 5 };
             this.monGetMoney = 2;
             this.increaseHp = 20;
         }
@@ -96,7 +96,7 @@ namespace TextGameProject
             this.name = "좀비";
             this.hp = 30;
             this.damage = 3;
-            this.item = "";
+            this.item = new int[6] { 0, 1, 2, 3, 4, 5 };
             this.monGetMoney = 3;
             this.increaseHp = 30;
         }
@@ -110,7 +110,7 @@ namespace TextGameProject
             this.name = "늑대";
             this.hp = 35;
             this.damage = 4;
-            this.item = "";
+            this.item = new int[6] { 0, 1, 2, 3, 4, 5 };
             this.monGetMoney = 4;
             this.increaseHp = 35;
         }

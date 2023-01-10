@@ -71,7 +71,12 @@ namespace TextGameProject
             this.item = "";
             this.increaseHp = 30;
             this.inventory = new List<int>();
-  
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
         }
         
     }
@@ -87,6 +92,12 @@ namespace TextGameProject
             this.item = "";
             this.increaseHp = 35;
             this.inventory = new List<int>();
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
         }
     }
 
@@ -101,6 +112,12 @@ namespace TextGameProject
             this.item = "";
             this.increaseHp = 25;
             this.inventory = new List<int>();
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
         }
     }
 
@@ -115,6 +132,12 @@ namespace TextGameProject
             this.item = "";
             this.increaseHp = 20;
             this.inventory = new List<int>();
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
+            inventory.Add(0);
         }
     }
 
