@@ -114,7 +114,7 @@ namespace TextGameProject
                         break;
                     default:
                         Console.WriteLine("1~4 수를 입력해 주세요");
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
                         Console.Clear();
                         continue;
                 }
@@ -132,6 +132,7 @@ namespace TextGameProject
                 Console.Clear();
 
                 switch (inputMonster)
+
                 {
                     case 1:
                         Slime slime = new Slime();
@@ -184,15 +185,14 @@ namespace TextGameProject
                         break;
                     default:
                         Console.WriteLine("잘못된 수를 입력했습니다. 캐릭터를 다시 입력해주세요");
-                        Thread.Sleep(1000);
+                        Thread.Sleep(500);
                         Console.Clear();
                         continue;
                 }
+                Console.ReadKey();
                 Console.Clear();
 
-                Console.WriteLine();
-                Console.WriteLine();
-                Console.WriteLine();
+                
 
 
                 // 캐릭터 vs 몬스터 가지고 오기[셋업(설정)]
@@ -200,24 +200,17 @@ namespace TextGameProject
 
                 Random random = new Random();
                 int randomNum = random.Next(1, 7);
+                ConsoleKey userInputKey = ConsoleKey.NoName;
                 while (true)
                 {
-
-
                     //Bat()[함수]에 있는 정보 출력
-                    batting.Bat(characters, monster,randomNum, count);
+                    batting.Bat(characters, monster,randomNum, count, ref userInputKey);
 
-                    // 공격 당했을때 몬스터 데이지 감소, 캐릭터가 먼저 공격
-                    monster.MonHit(characters.damage);
-
-                    // 공격 당했을때 캐릭터 데이지 감소
-                    characters.ChHit(monster.damage);
+                    
 
 
 
-                    Console.WriteLine($"남은 몬스터 체력 : {monster.hp} ");
-                    Console.WriteLine($"남은 캐릭터 체력 : {characters.hp} ");
-                    Console.ReadKey();
+                    //Console.Write($" 남은 몬스터 체력 : {monster.hp} \n 남은 캐릭터 체력 : {characters.hp}");
                     if (monster.hp <= 0)
                     {
 
@@ -234,16 +227,15 @@ namespace TextGameProject
                             randomNum = random.Next(1, 7);
                         }
                     }
-                    else if (characters.hp <= 0)
+                    else if (characters.hp <= 0 || characters.hp == monster.hp)
                     {
                         Console.Clear();
                         batting.Lose(characters);
 
                     }
 
-                    Console.ReadKey();
+                    Thread.Sleep(200);
                     Console.Clear();
-
 
                 }
 
