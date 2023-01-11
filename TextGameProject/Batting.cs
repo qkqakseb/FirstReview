@@ -49,18 +49,26 @@ namespace TextGameProject
             Console.WriteLine($"                                                                                     승리시 얻을 아이템 : {winItem[num -1]}");
             Console.WriteLine("========================================================================================================================");
             Console.WriteLine();
-            Console.WriteLine($"                                               {characters.name} VS {monster.name} {count}");
+            Console.WriteLine($"                                                    {characters.name} VS {monster.name} {count}");
             Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine($"                    {ch.image}                                               {mo.image} ");
+            for (int i = 0; i < ch.image.Count; i++)
+            {
+                if (i < 24)
+                {
+                    Console.WriteLine($"      {ch.image[i]}                       {mo.image[i]} ");
+                }
+                else
+                {
+                    Console.WriteLine($"      {ch.image[i]}");
+                }
+
+
+            }
             Console.WriteLine();
             Console.WriteLine($"                        {ch.name}                                                      {mo.name} {count}");
             Console.WriteLine();
             Console.WriteLine($"                      hp   : {ch.hp}                                                     hp   : {mo.hp}");
             Console.WriteLine($"                    데미지 : {ch.damage}                                                    데미지 : {mo.damage}");
-            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("========================================================================================================================");
@@ -142,28 +150,28 @@ namespace TextGameProject
                     else
                     {
                         Console.WriteLine("물풍선 을(를) 사용하여 몬스터에게 피해를 줬습니다.");
-                        Console.SetCursorPosition(46, 15);
+                        Console.SetCursorPosition(50, 25);
                         Console.ForegroundColor = ConsoleColor.Blue;
                         for (int i = 0; i < 10; i++)
                         {
                             if (i == 7)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 13);
+                                Console.SetCursorPosition((i * 2) + 50, 23);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 18);
+                                Console.SetCursorPosition((i * 2) + 50, 28);
                                 Console.Write("■");
                             }
                             else if (i == 8)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 14);
+                                Console.SetCursorPosition((i * 2) + 50, 24);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 17);
+                                Console.SetCursorPosition((i * 2) + 50, 27);
                                 Console.Write("■");
                             }
 
-                            Console.SetCursorPosition((i * 2) + 46, 15);
+                            Console.SetCursorPosition((i * 2) + 50, 25);
                             Console.Write("■");
-                            Console.SetCursorPosition((i * 2) + 46, 16);
+                            Console.SetCursorPosition((i * 2) + 50, 26);
                             Console.Write("■");
                             Thread.Sleep(25);
 
@@ -186,28 +194,28 @@ namespace TextGameProject
                     else
                     {
                         Console.WriteLine("물폭탄 을(를) 사용하여 몬스터에게 피해를 줬습니다.");
-                        Console.SetCursorPosition(46, 15);
+                        Console.SetCursorPosition(50, 25);
                         Console.ForegroundColor = ConsoleColor.Red;
                         for (int i = 0; i < 10; i++)
                         {
                             if (i == 7)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 13);
+                                Console.SetCursorPosition((i * 2) + 50, 23);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 18);
+                                Console.SetCursorPosition((i * 2) + 50, 28);
                                 Console.Write("■");
                             }
                             else if (i == 8)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 14);
+                                Console.SetCursorPosition((i * 2) + 50, 24);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 17);
+                                Console.SetCursorPosition((i * 2) + 50, 27);
                                 Console.Write("■");
                             }
 
-                            Console.SetCursorPosition((i * 2) + 46, 15);
+                            Console.SetCursorPosition((i * 2) + 50, 25);
                             Console.Write("■");
-                            Console.SetCursorPosition((i * 2) + 46, 16);
+                            Console.SetCursorPosition((i * 2) + 50, 26);
                             Console.Write("■");
                             Thread.Sleep(25);
 
@@ -228,28 +236,28 @@ namespace TextGameProject
                     else
                     {
                         Console.WriteLine("물광선 을(를) 사용하여 몬스터에게 피해를 줬습니다.");
-                        Console.SetCursorPosition(46, 15);
+                        Console.SetCursorPosition(50, 25);
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         for (int i = 0; i < 10; i++)
                         {
                             if (i == 7)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 13);
+                                Console.SetCursorPosition((i * 2) + 50, 23);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 18);
+                                Console.SetCursorPosition((i * 2) + 50, 28);
                                 Console.Write("■");
                             }
                             else if (i == 8)
                             {
-                                Console.SetCursorPosition((i * 2) + 46, 14);
+                                Console.SetCursorPosition((i * 2) + 50, 24);
                                 Console.Write("■");
-                                Console.SetCursorPosition((i * 2) + 46, 17);
+                                Console.SetCursorPosition((i * 2) + 50, 27);
                                 Console.Write("■");
                             }
 
-                            Console.SetCursorPosition((i * 2) + 46, 15);
+                            Console.SetCursorPosition((i * 2) + 50, 25);
                             Console.Write("■");
-                            Console.SetCursorPosition((i * 2) + 46, 16);
+                            Console.SetCursorPosition((i * 2) + 50, 26);
                             Console.Write("■");
                             Thread.Sleep(25);
 
@@ -260,28 +268,28 @@ namespace TextGameProject
                     }
                     break;
                 default:
-                    Console.SetCursorPosition(46, 15);
+                    Console.SetCursorPosition(50, 25);
                     Console.ForegroundColor = ConsoleColor.White;
                     for (int i = 0; i < 10; i++)
                     {
                         if (i == 7)
                         {
-                            Console.SetCursorPosition((i * 2) + 46, 13);
+                            Console.SetCursorPosition((i * 2) + 50, 23);
                             Console.Write("■");
-                            Console.SetCursorPosition((i * 2) + 46, 18);
+                            Console.SetCursorPosition((i * 2) + 50, 28);
                             Console.Write("■");
                         }
                         else if (i == 8)
                         {
-                            Console.SetCursorPosition((i * 2) + 46, 14);
+                            Console.SetCursorPosition((i * 2) + 50, 24);
                             Console.Write("■");
-                            Console.SetCursorPosition((i * 2) + 46, 17);
+                            Console.SetCursorPosition((i * 2) + 50, 27);
                             Console.Write("■");
                         }
 
-                        Console.SetCursorPosition((i * 2) + 46, 15);  
+                        Console.SetCursorPosition((i * 2) + 50, 25);  
                         Console.Write("■");
-                        Console.SetCursorPosition((i * 2) + 46, 16);
+                        Console.SetCursorPosition((i * 2) + 50, 26);
                         Console.Write("■");
                         Thread.Sleep(25);
 

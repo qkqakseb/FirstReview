@@ -43,6 +43,8 @@ namespace TextGameProject
         // 출력하는 순서
         public void Run()
         {
+            Console.SetWindowSize(120,50);
+
             // 첫 화면 출력
             Crazy();
 
@@ -139,7 +141,11 @@ namespace TextGameProject
 
                         Console.WriteLine("슬라임 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{slime.GetImage()}");
+                        for( int i = 0; i < slime.image.Count; i++)
+                        {
+                            Console.WriteLine($"{slime.image[i]}");
+                        }
+                        
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {slime.GetName()}");
                         Console.WriteLine($" hp : {slime.GetHp()}");
@@ -151,8 +157,10 @@ namespace TextGameProject
 
                         Console.WriteLine("오크 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{oak.GetImage()}");
-                        Console.WriteLine();
+                        for (int i = 0; i < oak.image.Count; i++)
+                        {
+                            Console.WriteLine($"{oak.image[i]}");
+                        }
                         Console.WriteLine($" 이름 : {oak.GetName()}");
                         Console.WriteLine($" hp : {oak.GetHp()}");
                         Console.WriteLine($" 데미지 : {oak.GetDamage()}");
@@ -163,8 +171,10 @@ namespace TextGameProject
 
                         Console.WriteLine("좀비 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{zombie.GetImage()}");
-                        Console.WriteLine();
+                        for (int i = 0; i < zombie.image.Count; i++)
+                        {
+                            Console.WriteLine($"{zombie.image[i]}");
+                        }
                         Console.WriteLine($" 이름 : {zombie.GetName()}");
                         Console.WriteLine($" hp : {zombie.GetHp()}");
                         Console.WriteLine($" 데미지 : {zombie.GetDamage()}");
@@ -175,7 +185,10 @@ namespace TextGameProject
 
                         Console.WriteLine("늑대 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{wolf.GetImage()}");
+                        for (int i = 0; i < wolf.image.Count; i++)
+                        {
+                            Console.WriteLine($"{wolf.image[i]}");
+                        }
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {wolf.GetName()}");
                         Console.WriteLine($" hp : {wolf.GetHp()}");

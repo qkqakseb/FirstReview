@@ -9,7 +9,7 @@ namespace TextGameProject
     public class Monster
     {
         public string name;
-        public string image;
+        public List<string> image = new List<string>();
         public int hp;
         public int damage;
         protected int money = 100;
@@ -41,7 +41,7 @@ namespace TextGameProject
         {
             return this.name;
         }
-        public string GetImage()
+        public List<string> GetImage()
         {
             return this.image;
         }
@@ -66,7 +66,30 @@ namespace TextGameProject
     {
         public Slime() 
         {
-            this.image = "（∮ｗ∮）";
+            this.image.Add("                       ;=#@#*:          ");
+            this.image.Add("        ::-           :;,   ,;!         ");
+            this.image.Add("       -   ,         ~*,      :*        ");
+            this.image.Add("      -:   .        =:  ,      #        ");
+            this.image.Add("       =  -         ,:  :      ~~       ");
+            this.image.Add("        * :        ~:    !      @       ");
+            this.image.Add("        -        =-       $    ,@       ");
+            this.image.Add("        $     ;:~~         ,;  ,@       ");
+            this.image.Add("        ;*  ~!,~             ~,*:       ");
+            this.image.Add("         *=                   !$        ");
+            this.image.Add("         !                      =       ");
+            this.image.Add("        :: ;$!      -,-,         ,      ");
+            this.image.Add("        ~ $ !=:     :=#;         #      ");
+            this.image.Add("       :, ;$@:      =,,#         #      ");
+            this.image.Add("       #,           $~=#         ,      ");
+            this.image.Add("       #,                        -      ");
+            this.image.Add("       #,                        ,,     ");
+            this.image.Add("        ~-                       #      ");
+            this.image.Add("        -                       ,=      ");
+            this.image.Add("        !,                      :       ");
+            this.image.Add("         !                     !-       ");
+            this.image.Add("          *,                   =        ");
+            this.image.Add("           ::;,             ;:          ");
+            this.image.Add("              **--~~~-,!=*              ");
             this.name = "슬라임";
             this.hp = 20;
             this.damage = 1;
@@ -79,7 +102,30 @@ namespace TextGameProject
     {
         public Oak()
         {
-            this.image = "（▶㈂◀）";
+            this.image.Add("                       ;=#@#*:          ");
+            this.image.Add("        ::-           :;,   ,;!         ");
+            this.image.Add("       -   ,         ~*,      :*        ");
+            this.image.Add("      -:   .        =:  ,      #        ");
+            this.image.Add("       =  -         ,:  :      ~~       ");
+            this.image.Add("        * :        ~:    !      @       ");
+            this.image.Add("        -        =-       $    ,@       ");
+            this.image.Add("        $     ;:~~         ,;  ,@       ");
+            this.image.Add("        ;*  ~!,~             ~,*:       ");
+            this.image.Add("         *=                   !$        ");
+            this.image.Add("         !                      =       ");
+            this.image.Add("        :: ;$!      -,-,         ,      ");
+            this.image.Add("        ~ $ !=:     :=#;         #      ");
+            this.image.Add("       :, ;$@:      =,,#         #      ");
+            this.image.Add("       #,           $~=#         ,      ");
+            this.image.Add("       #,                        -      ");
+            this.image.Add("       #,                        ,,     ");
+            this.image.Add("        ~-                       #      ");
+            this.image.Add("        -                       ,=      ");
+            this.image.Add("        !,                      :       ");
+            this.image.Add("         !                     !-       ");
+            this.image.Add("          *,                   =        ");
+            this.image.Add("           ::;,             ;:          ");
+            this.image.Add("              **--~~~-,!=*              ");
             this.name = "오크";
             this.hp = 20;
             this.damage = 2;
@@ -92,7 +138,30 @@ namespace TextGameProject
     {
         public Zombie()
         {
-            this.image = "（⊙□⊙）";
+            this.image.Add("                       ;=#@#*:          ");
+            this.image.Add("        ::-           :;,   ,;!         ");
+            this.image.Add("       -   ,         ~*,      :*        ");
+            this.image.Add("      -:   .        =:  ,      #        ");
+            this.image.Add("       =  -         ,:  :      ~~       ");
+            this.image.Add("        * :        ~:    !      @       ");
+            this.image.Add("        -        =-       $    ,@       ");
+            this.image.Add("        $     ;:~~         ,;  ,@       ");
+            this.image.Add("        ;*  ~!,~             ~,*:       ");
+            this.image.Add("         *=                   !$        ");
+            this.image.Add("         !                      =       ");
+            this.image.Add("        :: ;$!      -,-,         ,      ");
+            this.image.Add("        ~ $ !=:     :=#;         #      ");
+            this.image.Add("       :, ;$@:      =,,#         #      ");
+            this.image.Add("       #,           $~=#         ,      ");
+            this.image.Add("       #,                        -      ");
+            this.image.Add("       #,                        ,,     ");
+            this.image.Add("        ~-                       #      ");
+            this.image.Add("        -                       ,=      ");
+            this.image.Add("        !,                      :       ");
+            this.image.Add("         !                     !-       ");
+            this.image.Add("          *,                   =        ");
+            this.image.Add("           ::;,             ;:          ");
+            this.image.Add("              **--~~~-,!=*              ");
             this.name = "좀비";
             this.hp = 30;
             this.damage = 3;
@@ -106,7 +175,30 @@ namespace TextGameProject
         public Wolf()
         {
 
-            this.image = "（＾．㉦ ．＾）";
+            this.image.Add("                       ;=#@#*:          ");
+            this.image.Add("        ::-           :;,   ,;!         ");
+            this.image.Add("       -   ,         ~*,      :*        ");
+            this.image.Add("      -:   .        =:  ,      #        ");
+            this.image.Add("       =  -         ,:  :      ~~       ");
+            this.image.Add("        * :        ~:    !      @       ");
+            this.image.Add("        -        =-       $    ,@       ");
+            this.image.Add("        $     ;:~~         ,;  ,@       ");
+            this.image.Add("        ;*  ~!,~             ~,*:       ");
+            this.image.Add("         *=                   !$        ");
+            this.image.Add("         !                      =       ");
+            this.image.Add("        :: ;$!      -,-,         ,      ");
+            this.image.Add("        ~ $ !=:     :=#;         #      ");
+            this.image.Add("       :, ;$@:      =,,#         #      ");
+            this.image.Add("       #,           $~=#         ,      ");
+            this.image.Add("       #,                        -      ");
+            this.image.Add("       #,                        ,,     ");
+            this.image.Add("        ~-                       #      ");
+            this.image.Add("        -                       ,=      ");
+            this.image.Add("        !,                      :       ");
+            this.image.Add("         !                     !-       ");
+            this.image.Add("          *,                   =        ");
+            this.image.Add("           ::;,             ;:          ");
+            this.image.Add("              **--~~~-,!=*              ");
             this.name = "늑대";
             this.hp = 35;
             this.damage = 4;
