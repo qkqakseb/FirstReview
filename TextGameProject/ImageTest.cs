@@ -8,63 +8,107 @@ namespace TextGameProject
 {
     internal class ImageTest
     {
-            this.image.Add(",,:!***$#;~ , ,~;;;;;;;;~,,,,~!@#=**$:,,");
-            this.image.Add(" ;!      =@=~#$$~      ~$##~=@#    - :=,");
-            this.image.Add(":$        =@-               *@$     - !:");
-            this.image.Add("*:      *@-                 ,;@$    ~  #");
-            this.image.Add("@:-   ,$:                      $#   ~  @");
-            this.image.Add("@  - -#:                        ;@!:-  @");
-            this.image.Add("@!  ;@~                          ~@;   @");
-            this.image.Add("!@  @:                            ,@- #!");
-            this.image.Add(":@=#=                              =$;@;");
-            this.image.Add(";=@#                                @@!;");
-            this.image.Add(";;#*  ,            ,,               ;#~~");
-            this.image.Add("!*@           ,!@@@@@@@@:,          -@,-");
-            this.image.Add("!*@    -    =@#==!;;;;*==#@~         @*:");
-            this.image.Add("!#$    ~  !#~=@##*;;;;**$@$~$~       @#~");
-            this.image.Add(":#*    -:$=!=!!!@**==*=@*!!=!=;      =@:");
-            this.image.Add("-#*   ~~$=*;     *-  ;=-    :*=;     =@;");
-            this.image.Add(":$=   ~*$#:       !  *-      -##:    ##!");
-            this.image.Add(" !@  :~@-;-        $#:        ~~#    @*;");
-            this.image.Add("  @  :**=:,        *!:        ,~$,  ,@  ");
-            this.image.Add("  @*  $!#:,        -;:         =!!  ;#  ");
-            this.image.Add("  =$  $!@!!!**#@@=$#==$@@#$$$$$=!*  #=:;");
-            this.image.Add("   @*:$!*,    !@   $;  #@-     ,=~ =@!!!");
-            this.image.Add("   *@  #-~        ,=#         * @  @*!!;");
-            this.image.Add(";  ;=@;$!=~       * ,=       -:#;-@!:~~:");
-            this.image.Add(":    =@!#!*:    ~!,@$~$-    :!=*-@!  -;:");
-            this.image.Add("     !=@;$$;$$=$!  $=  =$=$#;@=~#:,,--~:");
-            this.image.Add("        @@;@@;           ,#@=,@#-       ");
-            this.image.Add("        #@$@#!;=######@$;:;$#$@#-,,     ");
-            this.image.Add("       #*,~:!@@#========#@@!:, *#,      ");
+
+
+this.image.Add("                   @  @       @                      ");
+this.image.Add("                  @     @   @   @                    ");
+this.image.Add("                   @      @     @                    ");
+this.image.Add("                 @ @            @  @                 ");
+this.image.Add("               @                     @               ");
+this.image.Add("             @                         @             ");
+this.image.Add("           @                             @           ");
+this.image.Add("          @                               @          ");
+this.image.Add("         @                                 @         ");
+this.image.Add("        @                                    @       ");
+this.image.Add("      @                                        @     ");
+this.image.Add("    @             @@@@@          @@@@@           @   ");
+this.image.Add("  @           @       @      @       @             @ ");
+this.image.Add(" @           @  @ @ @         @ @ @  @              @");
+this.image.Add("@            @                      @    @          @");
+this.image.Add("@       @                                 @         @");
+this.image.Add("@      @   @@@@@@@@         @@@@@@@@@     @         @");
+this.image.Add("@     @  @@@@@@@@@@@       @@@@@@@@@@@@    @        @");
+this.image.Add("@     @ @@@       @@@     @@@        @@@   @        @");
+this.image.Add("@     @ @@         @@@   @@@          @@@  @        @");
+this.image.Add(" @   @ @          @  @@   @@   @       @@@  @      @ ");
+this.image.Add(" @   @ @@     @    @@@@@@@@@@@    @     @@@  @    @  ");
+this.image.Add(" @    @ @@      @@@@ @@@@@ @@@@ @@     @@@  @    @  ");
+this.image.Add(" @    @ @@    @@@@@@  @@ @@  @@@@@@    @@@  @    @   ");  
+this.image.Add("   @  @ @@           @@   @@          @@   @    @    ");
+this.image.Add("     @ @  @@@@@@@@@@@      @@@@@@@@@@@    @   @      ");
+this.image.Add("       @               @@                  @         ");
 
 
 
-                                        
-this.image.Add("                       ;=#@#*:          ");
-this.image.Add("        ::-           :;,   ,;!         ");
-this.image.Add("       -   ,         ~*,      :*        ");
-this.image.Add("      -:   .        =:  ,      #        ");
-this.image.Add("       =  -         ,:  :      ~~       "); 
-this.image.Add("        * :        ~:    !      @       ");
-this.image.Add("        -        =-       $    ,@       ");
-this.image.Add("        $     ;:~~         ,;  ,@       ");
-this.image.Add("        ;*  ~!,~             ~,*:       ");
-this.image.Add("         *=                   !$        ");
-this.image.Add("         !                      =       ");
-this.image.Add("        :: ;$!      -,-,         ,      ");  
-this.image.Add("        ~ $ !=:     :=#;         #      "); 
-this.image.Add("       :, ;$@:      =,,#         #      "); 
-this.image.Add("       #,           $~=#         ,      "); 
-this.image.Add("       #,                        -      ");
-this.image.Add("       #,                        ,,     "); 
-this.image.Add("        ~-                       #      "); 
-this.image.Add("        -                       ,=      "); 
-this.image.Add("        !,                      :       "); 
-this.image.Add("         !                     !-       "); 
-this.image.Add("          *,                   =        ");  
-this.image.Add("           ::;,             ;:          "); 
-this.image.Add("              **--~~~-,!=*              "); 
-                                
+
+   
+
+
+
+
+this.image.Add(".,@@ @ @ @  @ @ @@@@@@@@@@@@@@ @  @  @ @ @ @  @  ");
+this.image.Add(",@        @    @                @    @        @  ");
+this.image.Add(",@ .      @   @                  @    @       @  ");
+this.image.Add("~=@,,.   ~@   @                    @    @     @   ");
+this.image.Add("*! @,,, -@ -@                     @     @   @    ");
+this.image.Add("$!,,@ ,:@:--=@.                       @  @  @ @    ");
+this.image.Add("~#$~,,@  @  @                         @        @  ");
+this.image.Add(";=,,,;#=;~:;@$;@@@@@@@@@@@@@@@@@@@  @      @    @ ");
+this.image.Add("!*,,-#=~~;@:~~;                             @:  *@");
+this.image.Add("=;,,;#::;@!!;;:~!$~,,.,.,,,....-*ㅡ         @*  ;@");
+this.image.Add("$;,,!#:;@***===$=#@#@@@@@##@@@@@##$$==***;@@ =  ;@");
+this.image.Add("=;,,!#~@$@@@#$===============$=======$$@@#!~@*  ;@");
+this.image.Add("**,,:#@=@@###$=***===$==*===$#===*=====$@@$~@:  !@");
+this.image.Add("*=,,,$@@@@####$=/====$@======$@/**====$#@@@*@.  $@");
+this.image.Add(":$,,,:@@------- --------------- ----------@@-   @;");
+this.image.Add("-,$:,,@$=.. ,*@@@@@,.,--~---,.-*##$$:.   ;@.  ~@:-");
+this.image.Add("--;#~.@  @  @.  .=@;       .!@!.  ,#~  .@;  ,#@~-");
+this.image.Add("--~#*-,@$= @@.    ;@@:      !@@.    ;*  !@,  *@-~-");
+this.image.Add("~~-~#:,, @*;@.    =@##,    ~#@@:    ~=:~@:   @-,,.");
+this.image.Add("-~--;#:,,!#!@~  ~#@@@@!    $@@@@$.  *=:@!  -@:.,-,");
+this.image.Add("--~--!#:--*@;@  .@@@@@@.  ,@@@@@=  .=:#@. ~@;..  ,");
+this.image.Add("------!#;,,:*!,  :@@@@@.  -@@@@@,  -~*;.,!@;.,...-");
+this.image.Add("~~~~~--;#:        *@@@@,  ~@@@@:    .   :$~......-");
+this.image.Add("---~~~@@@@@@@   .  ;:...@@    .,. .-@@@@@@@  . ...");
+
+
+
+
+
+
+this.image.Add("                       . ..                       ");
+this.image.Add("                   .  ......  ..                  ");
+this.image.Add("                  .. ..........                   ");
+this.image.Add("                .. ..       .......               ");
+this.image.Add("              .......       ........              ");
+this.image.Add("             . .....   .    ...    ..             ");
+this.image.Add("            . ......          .    ...            ");
+this.image.Add("           .. ..  ...             .....           ");
+this.image.Add("      . . ...      ..             .........       ");
+this.image.Add("      .....,..     ..       .        .......      ");
+this.image.Add("      .....,.. .... .. ......  ,,,  .........     ");
+this.image.Add("    ....  .,..-!#@@=-. ..   .-=@@@#-.  .....,.    ");
+this.image.Add("    .........~#@@#@@#~. .   ~#@##@@@:.........    ");
+this.image.Add("    .........;@@$!!=@#,    .=#=!;;$@;. ....,..    ");
+this.image.Add("    .......,.,$*-  ,;#! .. ~#*-   ~#.. .......    ");
+this.image.Add("    .......,.,-,    .!$ .. !#,     -   .....,,    ");
+this.image.Add("     ......,....     .-    ,,        ......,,,    ");
+this.image.Add("     ,... .,,..              .      .. ...,.,,    ");
+this.image.Add("     .,...,,,..     *#      *=-     .......,,     ");
+this.image.Add("      ..,.,,,.     .=$:     $$*     ....,.,,      ");
+this.image.Add("        ,.,,..     ,=#=     $$*      ...,-,       ");
+this.image.Add("          .,.,.    .$#*     $$;      .,,.,        ");
+this.image.Add("            .,,.    $#-     ==,     ..,           ");
+this.image.Add("             ....   ,,...   .,     ..,            ");
+this.image.Add("             ... ..   .~$$; .     ..,             ");
+this.image.Add("       ....,,,,,.....   ,-..  .  ..,,......       ");
+this.image.Add("       .....,,,-,,. .......   ..,,,,,.....        ");
+this.image.Add("           ..,,---,,,-,....,..,,--,,...           ");
+this.image.Add("              ..,,,,,,,,,,,,,,,,,,..              ");
+            
+
+
+
+
     }
 }

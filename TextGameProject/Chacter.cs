@@ -64,36 +64,33 @@ namespace TextGameProject
     public class Bazzi : Characters
     {
         public Bazzi() 
-        {
-            this.image.Add("   @***$#;~                  ~@@#=**$   ");
-            this.image.Add("  @       @=~#$$~@@@@@@~$##~=@#      @  ");
-            this.image.Add(" $         @                 @        @ ");
-            this.image.Add("@       @                     @        @");
-            this.image.Add("@      $                       $       @");
-            this.image.Add("@     #                          @     @");
-            this.image.Add(" @   @                            @    @");
-            this.image.Add(" @  @                              @   @");
-            this.image.Add(" @ @                                @ @ ");
-            this.image.Add("  @#                                @@  ");
-            this.image.Add(" ;@                                  @  ");
-            this.image.Add(" *@           ,@@@@@@@@@:,          -@, ");
-            this.image.Add(" *@         =@#==@;;;;*==#@~         @* ");
-            this.image.Add(" #$       @#~=@##*;;;;**$@$~$~       @# ");
-            this.image.Add(" #*     :$=@=@@@@**==*=@*@@=@=;      =@ ");
-            this.image.Add(" #*    ~$=*;     *-  ;=-    :*=;     =@ ");
-            this.image.Add(" $=    *$#:       @  *-      -##:    ## ");
-            this.image.Add(" @@   ~@-;-        $#:        ~~#    @* ");
-            this.image.Add("  @   **=:,        *@:        ,~$,  ,@  ");
-            this.image.Add("  @*  $@#:,        -;:         =@@  ;#  ");
-            this.image.Add("  =$  $@@=======================@*  #=  ");
-            this.image.Add("   @* $@*,     @   $;   @      ,=~ =@   ");
-            this.image.Add("   *@  #-~        ,=#         * @  @*   ");
-            this.image.Add("    =@;$@=~       *  =       -:#;-@@:   ");
-            this.image.Add("     =@@#@*:    ~@    $-    :@=*-@@     ");
-            this.image.Add("     @=@;$$;$$=$@      =$=$#;@=~#:      ");
-            this.image.Add("        @@;                 =,@#        ");
-            this.image.Add("         #@$               #$@#         ");
-            this.image.Add("          #:!@@#========#@@!:#          ");
+        {   
+            this.image.Add("   @@@@@                       @@@@@   ");
+            this.image.Add("  @     @  @@@@@@@@@@@@@@@@@  @     @  ");
+            this.image.Add(" @        @                 @        @ ");
+            this.image.Add("@       @                     @       @");
+            this.image.Add("@      @                       @      @");
+            this.image.Add("@     @                         @     @");
+            this.image.Add(" @   @                           @    @");
+            this.image.Add(" @  @                             @   @");
+            this.image.Add(" @ @                               @ @ ");
+            this.image.Add("  @                                 @  ");
+            this.image.Add("  @            @@@@@@@@@@            @ ");
+            this.image.Add("  @          @||||||||||||@          @ ");
+            this.image.Add("  @        @||||||||||||||||@        @ ");
+            this.image.Add("  @       @------------------@       @ ");
+            this.image.Add("  @      @@@@@@@@@    @@@@@@@@@      @ ");
+            this.image.Add("  @     @         @  @         @     @ ");
+            this.image.Add("  @    @           @@           @    @ ");
+            this.image.Add("  @    @           @@           @    @ ");
+            this.image.Add("  @    @           @@           @    @ ");
+            this.image.Add("  @    @========================@    @ ");
+            this.image.Add("   @   @       @   @@   @       @   @  ");
+            this.image.Add("    @  @           @@           @  @   ");
+            this.image.Add("     @ @          @  @          @ @    ");
+            this.image.Add("      @ @        @     @       @ @     ");
+            this.image.Add("       @ @@@@@@@@       @@@@@@@ @      ");
+            this.image.Add("                  @@@@                 ");
             this.name = " 배찌";
             this.hp = 30;
             this.damage = 3;
@@ -210,35 +207,29 @@ namespace TextGameProject
     {
         public Ethi()
         {
-            this.image.Add(",,:!***$#;~.,.,~;;;;;;;;~,,,,~!@#=**$:,,");
-            this.image.Add(".;!......=@=~#$$~......~$##~=@#::::-.:=,");
-            this.image.Add(":$........=@-..............*@$::::::-.!:");
-            this.image.Add("*:......*@-.................,;@$::::~..#");
-            this.image.Add("@:-...,$:......................$#;::~..@");
-            this.image.Add("@::-.-#:........................;@!:-..@");
-            this.image.Add("@!::;@~..........................~@;...@");
-            this.image.Add("!@::@:............................,@-.#!");
-            this.image.Add(":@=#=:...........      ............=$;@;");
-            this.image.Add(";=@#::.......              .........@@!;");
-            this.image.Add(";;#*::,....       .,,.       .......;#~~");
-            this.image.Add("!*@::::..    .,!@@@@@@@@:,    ......-@,-");
-            this.image.Add("!*@::::-   .=@#==!;;;;*==#@~.  ......@*:");
-            this.image.Add("!#$::::~..!#~=@##*;;;;**$@$~$~  .....@#~");
-            this.image.Add(":#*::::-:$=!=!!!@**==*=@*!!=!=;  ....=@:");
-            this.image.Add("-#*:::~~$=*;.....*-..;=-....:*=; ....=@;");
-            this.image.Add(":$=:::~*$#:.......! .*-......-##: ...##!");
-            this.image.Add(";!@:::~@-;-........$#:........~~#....@*;");
-            this.image.Add(";;@:::**=:,........*!:........,~$,..,@::");
-            this.image.Add(";;@*::$!#:,........-;:.........=!!..;#::");
-            this.image.Add(";;=$::$!@!!!**#@@=$#==$@@#$$$$$=!*..#=:;");
-            this.image.Add("::;@*:$!*,    !@.  $;  #@-    .,=~.=@!!!");
-            this.image.Add(";;;*@::#-~        ,=#.        *.@..@*!!;");
-            this.image.Add(";::;=@;$!=~       * ,=.      -:#;-@!:~~:");
-            this.image.Add(":;;;:=@!#!*:    ~!,@$~$-    :!=*-@!..-;:");
-            this.image.Add(":::::!=@;$$;$$=$!  $=  =$=$#;@=~#:,,--~:");
-            this.image.Add(":;:::::;@@;@@;......    .,#@=,@#-.  ... ");
-            this.image.Add(":;;:::::#@$@#!;=######@$;:;$#$@#-,,.  ..");
-            this.image.Add(";!;;;;;#*,~:!@@#========#@@!:,.*#,......");
+
+
+            this.image.Add("                 @   @  @  @  @  @                ");
+            this.image.Add("              @                    @              ");
+            this.image.Add("          @                           @           ");
+            this.image.Add("       @                                @         ");
+            this.image.Add("      @                                    @      ");
+            this.image.Add("    @                                        @    ");
+            this.image.Add("   @        @@@@@          @@@@@              @   ");
+            this.image.Add("  @       @       @      @       @             @  ");
+            this.image.Add(" @       @  @ @ @         @ @ @  @             @  ");
+            this.image.Add("@         @                     @    @          @ ");
+            this.image.Add("@     @                                 @       @ ");
+            this.image.Add("@    @  @@@@@@@@@@@        @@@@@@@@@@     @      @");
+            this.image.Add("@    @ @@@       @@@      @@         @@   @      @");
+            this.image.Add("@    @ @@         @@@    @@           @@   @     @");
+            this.image.Add(" @   @ @@         @  @@   @@   @        @@ @     @");
+            this.image.Add(" @   @ @@     @    @@@@@@@@@@@    @      @@ @   @ ");
+            this.image.Add("  @   @ @@    @  @@@@ @@@@@ @@@@ @@      @@ @   @ ");
+            this.image.Add("  @   @  @@   @@@@@@  @@ @@  @@@@@@     @@ @  @   ");
+            this.image.Add("   @  @   @@          @@   @@          @@  @  @   ");
+            this.image.Add("     @ @    @@@@@@@@@@       @@@@@@@@@    @ @     ");
+            this.image.Add("       @               @@                 @       ");
             this.name = " 에띠";
             this.hp = 20;
             this.damage = 2;

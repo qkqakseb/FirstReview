@@ -33,7 +33,7 @@ namespace TextGameProject
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("나의 인벤토리 ========================================================================================================");
+            Console.WriteLine("나의 인벤토리 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
             Console.WriteLine();
             for (int i = 0; i < characters.inventory.Count; i++)
             {
@@ -52,11 +52,11 @@ namespace TextGameProject
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine($"                                                                                           나의 돈 :  {characters.money} ");
-            Console.WriteLine("상점 ===================================================================================================================");
+            Console.WriteLine("상점 = = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆");
             Console.WriteLine();
             Console.WriteLine();
             for (int i = 0; i < 3; i++)
@@ -68,21 +68,21 @@ namespace TextGameProject
                         
                         if (j == 1)
                         {
-                            Console.Write($"{i + 1 + (j * 3)}. {winItem[i + (j * 3)]}".PadRight(20, ' ') + $" ({itemCost[winItem[i + (j * 3)]]}원)                       ".PadRight(50, ' '));
+                            Console.Write($"     {i + 1 + (j * 3)}. {winItem[i + (j * 3)]}".PadRight(20, ' ') + $" ({itemCost[winItem[i + (j * 3)]]}원)                     ".PadRight(50, ' '));
                         }
                         else
                         {
-                            Console.Write($"{i + 1 + (j * 3)}. {winItem[i + (j * 3)]}".PadRight(20, ' ') + $"({itemCost[winItem[i + (j * 3)]]}원)                       ".PadRight(49, ' '));
+                            Console.Write($"     {i + 1 + (j * 3)}. {winItem[i + (j * 3)]}".PadRight(20, ' ') + $"({itemCost[winItem[i + (j * 3)]]}원)                     ".PadRight(49, ' '));
                         }
                     }
                     else
-                        Console.Write($"{i + 1 + (j * 3)}. {winItem[i+ (j * 3)]}".PadRight(20,' ') + $" ({itemCost[winItem[i + (j * 3)]]}원)                         ".PadRight(50,' '));
+                        Console.Write($"     {i + 1 + (j * 3)}. {winItem[i+ (j * 3)]}".PadRight(20,' ') + $" ({itemCost[winItem[i + (j * 3)]]}원)                       ".PadRight(50,' '));
                 }
                 Console.WriteLine();
             }
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("= = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = =");
             Console.Write("                                                                  구매하실 아이템을 골라주세요(1~6 외 입력 시 구매종료)");
             int.TryParse(Console.ReadLine(), out selectItem);
 

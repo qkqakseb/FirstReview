@@ -43,7 +43,7 @@ namespace TextGameProject
         // 출력하는 순서
         public void Run()
         {
-            Console.SetWindowSize(120,50);
+            Console.SetWindowSize(120,45);
 
             // 첫 화면 출력
             Crazy();
@@ -73,7 +73,10 @@ namespace TextGameProject
                         Bazzi bazzi = new Bazzi();
                         Console.WriteLine("배찌 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{bazzi.GetImage()}");
+                        for (int i = 0; i < bazzi.image.Count; i++)
+                        {
+                            Console.WriteLine($"{bazzi.image[i]}");
+                        }
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {bazzi.GetName()}");
                         Console.WriteLine($" hp : {bazzi.GetHp()}");
@@ -85,7 +88,10 @@ namespace TextGameProject
                         Dao dao = new Dao();
                         Console.WriteLine("다오 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{dao.GetImage()}");
+                        for (int i = 0; i < dao.image.Count; i++)
+                        {
+                            Console.WriteLine($"{dao.image[i]}");
+                        }
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {dao.GetName()}");
                         Console.WriteLine($" hp : {dao.GetHp()}");
@@ -96,7 +102,10 @@ namespace TextGameProject
                         Dizni dizni = new Dizni();
                         Console.WriteLine("디지니 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{dizni.GetImage()}");
+                        for (int i = 0; i < dizni.image.Count; i++)
+                        {
+                            Console.WriteLine($"{dizni.image[i]}");
+                        }
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {dizni.GetName()}");
                         Console.WriteLine($" hp : {dizni.GetHp()}");
@@ -107,7 +116,10 @@ namespace TextGameProject
                         Ethi ethi = new Ethi();
                         Console.WriteLine("에띠 을(를) 선택하셨습니다.");
                         Console.WriteLine();
-                        Console.WriteLine($"{ethi.GetImage()}");
+                        for (int i = 0; i < ethi.image.Count; i++)
+                        {
+                            Console.WriteLine($"{ethi.image[i]}");
+                        }
                         Console.WriteLine();
                         Console.WriteLine($" 이름 : {ethi.GetName()}");
                         Console.WriteLine($" hp : {ethi.GetHp()}");
@@ -246,23 +258,10 @@ namespace TextGameProject
                         batting.Lose(characters);
 
                     }
-
                     Thread.Sleep(200);
                     Console.Clear();
-
                 }
-
-
-
-
-
             }
-
-            //Console.ReadKey();
-            //Console.Clear();
-            //store.Stor();
-
-
         }
 
         public void Crazy()
@@ -278,11 +277,18 @@ namespace TextGameProject
             Console.WriteLine("========================================================================================================================");
             Console.WriteLine();
             Console.WriteLine();
+            //Console.WriteLine(" _    _        _                                 _____                           ______         _    _    _               ");
+            //Console.WriteLine("| |  | |      | |                               /  __ `                          | ___ `       | |  | |  (_)              ");
+            //Console.WriteLine("| |  | |  ___ | |  ___   ___   _ __ ___    ___  | /  `/ _ __   __ _  ____ _   _  | |_/ /  __ _ | |_ | |_  _  _ __    __ _ ");
+            //Console.WriteLine("| |/`| | / _ `| | / __| / _ ` | '_ ` _ `  / _ ` | |    | '__| / _` ||_  /| | | | | ___ ` / _` || __|| __|| || '_ `  / _` |");
+            //Console.WriteLine("`  /`  /|  __/| || (__ | (_) || | | | | ||  __/ | `__/`| |   | (_| | / / | |_| | | |_/ /| (_| || |_ | |_ | || | | || (_| |");
+            //Console.WriteLine(" `/  `/  `___||_| `___| `___/ |_| |_| |_| `___|  `____/|_|    `__,_|/___| `__, | `____/  `__,_| `__| `__||_||_| |_| `__, |");
+            //Console.WriteLine("                                                                          __ / |                                     __/ |");
+            //Console.WriteLine("                                                                          | ___/                                     |___/"); 
             Console.WriteLine("                                                 Welcome Cray Batting            ");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("========================================================================================================================");
-
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();

@@ -75,7 +75,7 @@ namespace TextGameProject
             
             
             Console.WriteLine();
-            Console.WriteLine("인벤토리 (1. 회복약 2. 바늘 3. 방패 Q. 물풍선 W. 물폭탄 E. 물광선 )-----------------------------------------------------");
+            Console.WriteLine("인벤토리 (1. 회복약 2. 바늘 3. 방패 Q. 물풍선 W. 물폭탄 E. 물광선 )- - - - - - - - - - - - - - - - - - - - - - - - - - -");
             //string userSelectItem;
             for (int i = 0; i < characters.inventory.Count; i++)
             {
@@ -88,7 +88,7 @@ namespace TextGameProject
                     Console.WriteLine($"{winItem[i]} :{characters.inventory[i]}");
                 }
             }
-            Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
 
 
             ConsoleKeyInfo userInputKeyClass = Console.ReadKey();
@@ -327,19 +327,24 @@ namespace TextGameProject
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("========================================================================================================================");
+                Console.WriteLine("= = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("                                                      YOU WIN              ");
+                Console.WriteLine("                                 __   __  ___   _   _     _    _  _____  _   _ ");
+                Console.WriteLine("                                 ` ` / //  _  `| | | |   | |  | ||_   _|| ` | |");
+                Console.WriteLine("                                  ` V / | | | || | | |   | |  | |  | |  |  `| |");
+                Console.WriteLine("                                   ` /  | | | || | | |   | |/`| |  | |  | . ` |");
+                Console.WriteLine("                                   | |  ` `_/ /| |_| |   `  /`  / _| |_ | |`  |");
+                Console.WriteLine("                                   |_|   `___/  `___/     `/  `/  `___/ `_| `_/");
                 Console.WriteLine();
                 Console.WriteLine("                                                     ☆(^▽^)☆           ");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("========================================================================================================================");
+                Console.WriteLine("= = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆");
                 Console.Write($"+ {monster.monGetMoney}");
                 Console.WriteLine($"                                                                                              나의 돈 : {characters.money}");
                 characters.inventory[num - 1]++;
@@ -396,19 +401,25 @@ namespace TextGameProject
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("========================================================================================================================");
+                Console.WriteLine("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("                                                    YOU LOSE             ");
+
+                Console.WriteLine("                               __   __  ___   _   _     _      ___   _____  _____ ");
+                Console.WriteLine("                               ` ` / //  _  `| | | |   | |   /  _  `/  ___||  ___|");
+                Console.WriteLine("                                ` V / | | | || | | |   | |   | | | |` `--. | |__  ");
+                Console.WriteLine("                                 ` /  | | | || | | |   | |   | | | | `--. `|  __| ");
+                Console.WriteLine("                                 | |  ` `_/ /| |_| |   | |___` `_/ //`__/ /| |___ ");
+                Console.WriteLine("                                 |_|   `___/ `___ /    |____/ `___/ `____/ `____/ "); 
                 Console.WriteLine();
                 Console.WriteLine("                                                   o(ㅠ〓ㅠ)o          ");
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine();
-                Console.WriteLine("========================================================================================================================");
+                Console.WriteLine("= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =");
                 Console.Write($" - {monster.monGetMoney}");
                 Console.WriteLine($"                                                                                        나의 돈 : {characters.money}");
                 Console.WriteLine();
