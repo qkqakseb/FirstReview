@@ -53,7 +53,7 @@ namespace TextGameProject
             Console.WriteLine();
             for (int i = 0; i < ch.image.Count; i++)
             {
-                if (i < 24)
+                if (i<24)
                 {
                     Console.WriteLine($"      {ch.image[i]}                       {mo.image[i]} ");
                 }
@@ -460,17 +460,17 @@ namespace TextGameProject
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("= = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine($"                             {characters.name} 이(가) {monster.name} 을(를) 이겼습니다!!");
+            Console.WriteLine($"                                {characters.name} 이(가) {monster.name} 을(를) 이겼습니다!!");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("========================================================================================================================");
+            Console.WriteLine("= = = ☆ = = = = = = ☆ = = = = = =  ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆ = = = = = = ☆");
             
             Thread.Sleep(2000);
 
