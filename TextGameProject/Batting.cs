@@ -45,7 +45,8 @@ namespace TextGameProject
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine($"                                                                                     승리시 얻을 돈 : {monster.monGetMoney}");
+            Console.WriteLine($"                                                              " +
+                $"                       승리시 얻을 돈 : {monster.monGetMoney}");
             Console.WriteLine($"                                                                                     승리시 얻을 아이템 : {winItem[num -1]}");
             Console.WriteLine("========================================================================================================================");
             Console.WriteLine();
@@ -55,11 +56,11 @@ namespace TextGameProject
             {
                 if (i < 24)
                 {
-                    Console.WriteLine($"      {ch.image[i]}                       {mo.image[i]} ");
+                    Console.WriteLine($"    {ch.image[i]}                       {mo.image[i]} ");
                 }
                 else
                 {
-                    Console.WriteLine($"      {ch.image[i]}");
+                    Console.WriteLine($"    {ch.image[i]}");
                 }
 
 
@@ -67,15 +68,15 @@ namespace TextGameProject
             Console.WriteLine();
             Console.WriteLine($"                        {ch.name}                                                      {mo.name} {count}");
             Console.WriteLine();
-            Console.WriteLine($"                      hp   : {ch.hp}                                                     hp   : {mo.hp}");
-            Console.WriteLine($"                    데미지 : {ch.damage}                                                    데미지 : {mo.damage}");
+            Console.WriteLine($"                      hp   : {ch.hp}                                                      hp   : {mo.hp}");
+            Console.WriteLine($"                    데미지 : {ch.damage}                                                     데미지 : {mo.damage}");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("========================================================================================================================");
             
             
             Console.WriteLine();
-            Console.WriteLine("인벤토리 (1. 회복약 2. 바늘 3. 방패 Q. 물풍선 W. 물폭탄 E. 물광선 )-----------------------------------------------------");
+            Console.WriteLine("인벤토리 ( [1] 회복약, [2] 바늘, [3] 방패, [Q] 물풍선, [W] 물폭탄, [E] 물광선 )-----------------------------------------------------");
             //string userSelectItem;
             for (int i = 0; i < characters.inventory.Count; i++)
             {
